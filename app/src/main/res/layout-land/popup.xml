@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/popup"
+    android:layout_marginTop="100px"
+    android:layout_height="400px"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/popup_border"
+        android:background="#676767"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#4B4B4B"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/popup_border"
+            android:layout_height="match_parent"
+            android:background="#676767"></LinearLayout>
+
+        <!-- content layout start-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/popup_content_marginLeft"
+            android:layout_marginRight="@dimen/popup_content_marginRight"
+            android:paddingBottom="@dimen/popup_content_marginBottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/popup_title"
+                android:textStyle="bold"
+                android:layout_marginTop="40px"
+                android:textSize="@dimen/popup_listView_title_textSize"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:background="@drawable/popup_bg_line"></LinearLayout>
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/menu_listView"></ListView>
+
+        </LinearLayout>
+        <!-- content layout end  -->
+
+        <LinearLayout
+            android:layout_width="@dimen/popup_border"
+            android:layout_height="match_parent"
+            android:background="#676767"></LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_bottom"></LinearLayout>
+
+</LinearLayout>

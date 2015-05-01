@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AndroidMedia</string>
+
+
+
+     <!-- popup strings -->
+    <string name="popup_title">Плейлист</string>
+    <string name="popup_width">500</string>
+    <string name="popup_height">400</string>
+
+</resources>
